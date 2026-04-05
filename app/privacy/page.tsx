@@ -80,10 +80,10 @@ export default function PrivacyPage() {
           <Section title="8. Contacto">
             <p>Preguntas sobre privacidad:</p>
             <a
-              href="mailto:soporte@nascaantara.com"
+              href="mailto:info@devos-web.de"
               className="text-gold hover:text-gold-light transition-colors mt-2 inline-block"
             >
-              soporte@nascaantara.com
+              info@devos-web.de
             </a>
           </Section>
         </div>

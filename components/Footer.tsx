@@ -23,7 +23,7 @@ export default function Footer() {
               </Link>
             ))}
             <a
-              href="mailto:soporte@nascaantara.com"
+              href="mailto:info@devos-web.de"
               className="text-cream-muted hover:text-cream text-sm font-inter transition-colors"
             >
               Contacto
