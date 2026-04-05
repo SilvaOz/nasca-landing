@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         <h1 className="font-cinzel text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-3 leading-none animate-fade-up">
-          Nasca
+          Nazca
           <br />
           <span className="text-gold">Antara</span>
         </h1>

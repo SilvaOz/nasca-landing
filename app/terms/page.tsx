@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Términos de Servicio — Nasca Antara',
-  description: 'Términos de servicio de la aplicación Nasca Antara.',
+  title: 'Términos de Servicio — Nazca Antara',
+  description: 'Términos de servicio de la aplicación Nazca Antara.',
 }
 
 export default function TermsPage() {
@@ -28,7 +28,7 @@ export default function TermsPage() {
         <div className="space-y-8">
           <Section title="1. Aceptación de los términos">
             <p>
-              Al descargar, instalar o usar <strong className="text-cream">Nasca Antara</strong>,
+              Al descargar, instalar o usar <strong className="text-cream">Nazca Antara</strong>,
               aceptas quedar vinculado por estos Términos de Servicio. Si no estás de acuerdo,
               no utilices la aplicación.
             </p>
@@ -140,7 +140,7 @@ function TopBar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-deep/95 backdrop-blur-md border-b border-gold/20 h-16 flex items-center px-6">
       <Link href="/" className="font-cinzel text-gold font-bold tracking-widest text-sm hover:text-gold-light transition-colors">
-        ✦ NASCA ANTARA ✦
+        ✦ NAZCA ANTARA ✦
       </Link>
     </div>
   )

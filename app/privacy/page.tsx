@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad — Nasca Antara',
-  description: 'Política de privacidad de la aplicación Nasca Antara.',
+  title: 'Política de Privacidad — Nazca Antara',
+  description: 'Política de privacidad de la aplicación Nazca Antara.',
 }
 
 export default function PrivacyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
         <div className="space-y-8">
           <Section title="1. Información que recopilamos">
             <p>
-              <strong className="text-cream">Nasca Antara no recopila información personal.</strong> La
+              <strong className="text-cream">Nazca Antara no recopila información personal.</strong> La
               aplicación funciona completamente en tu dispositivo sin transmitir datos a nuestros servidores.
             </p>
             <p className="mt-3">Las grabaciones de audio que realices:</p>
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
 
           <Section title="5. Privacidad de menores">
             <p>
-              Nasca Antara es adecuada para todas las edades. No recopilamos intencionalmente
+              Nazca Antara es adecuada para todas las edades. No recopilamos intencionalmente
               información de niños menores de 13 años.
             </p>
           </Section>
@@ -102,7 +102,7 @@ function TopBar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-deep/95 backdrop-blur-md border-b border-gold/20 h-16 flex items-center px-6">
       <Link href="/" className="font-cinzel text-gold font-bold tracking-widest text-sm hover:text-gold-light transition-colors">
-        ✦ NASCA ANTARA ✦
+        ✦ NAZCA ANTARA ✦
       </Link>
     </div>
   )

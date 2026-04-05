@@ -28,7 +28,7 @@ export default function Nav() {
           href="/"
           className="font-cinzel text-gold font-bold tracking-widest text-sm hover:text-gold-light transition-colors"
         >
-          ✦ NASCA ANTARA ✦
+          ✦ NAZCA ANTARA ✦
         </Link>
 
         {/* Desktop */}

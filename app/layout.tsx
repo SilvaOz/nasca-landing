@@ -16,23 +16,23 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Nasca Antara — El Instrumento Ancestral',
+  title: 'Nazca Antara — El Instrumento Ancestral',
   description:
     'Toca la antara nazca en tu teléfono. El instrumento de viento del antiguo Perú, en tres tamaños auténticos: Chuli, Sanqa y Malta. Graba tus melodías.',
   keywords: ['antara', 'nazca', 'nasca', 'panflute', 'flauta andina', 'instrumento ancestral', 'música peruana', 'app'],
-  authors: [{ name: 'Nasca Antara' }],
+  authors: [{ name: 'Nazca Antara' }],
   metadataBase: new URL('https://nascaantara.com'),
   openGraph: {
-    title: 'Nasca Antara — El Instrumento Ancestral',
+    title: 'Nazca Antara — El Instrumento Ancestral',
     description: 'Toca la antara nazca en tu teléfono. Tres tamaños auténticos, grabación y demo incluidos.',
     type: 'website',
     locale: 'es_PE',
     url: 'https://nascaantara.com',
-    siteName: 'Nasca Antara',
+    siteName: 'Nazca Antara',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nasca Antara',
+    title: 'Nazca Antara',
     description: 'Toca la antara nazca en tu teléfono.',
   },
   robots: { index: true, follow: true },

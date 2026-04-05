@@ -21,7 +21,7 @@ export default function About() {
             </h2>
             <p className="text-cream-muted font-inter leading-relaxed mb-4">
               La antara nazca es uno de los instrumentos de viento más antiguos de América.
-              Usada por la civilización Nasca (100 a.C. — 800 d.C.) en ceremonias y rituales,
+              Usada por la civilización Nazca (100 a.C. — 800 d.C.) en ceremonias y rituales,
               su sonido ha resonado en las pampas del sur del Perú por más de dos milenios.
             </p>
             <p className="text-cream-muted font-inter leading-relaxed">

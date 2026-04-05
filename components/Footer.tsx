@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <span className="font-cinzel text-gold font-bold tracking-widest text-sm">
-            ✦ NASCA ANTARA ✦
+            ✦ NAZCA ANTARA ✦
           </span>
 
           <nav className="flex items-center gap-8">
@@ -31,7 +31,7 @@ export default function Footer() {
           </nav>
 
           <p className="text-cream-muted/40 font-inter text-xs">
-            © {new Date().getFullYear()} Nasca Antara
+            © {new Date().getFullYear()} Nazca Antara
           </p>
         </div>
 

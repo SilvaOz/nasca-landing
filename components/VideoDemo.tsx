@@ -9,7 +9,7 @@ export default function VideoDemo() {
           Escúchalo Tú Mismo
         </h2>
         <p className="text-cream-muted font-inter text-center mb-12 max-w-md mx-auto">
-          Sonidos auténticos grabados en las tierras de Nasca, Perú
+          Sonidos auténticos grabados en las tierras de Nazca, Perú
         </p>
 
         {/* Video wrapper */}
@@ -35,7 +35,7 @@ export default function VideoDemo() {
         </div>
 
         <p className="text-center text-cream-muted/50 font-inter text-xs mt-4">
-          Grabado en las dunas de Nasca, Perú
+          Grabado en las dunas de Nazca, Perú
         </p>
       </div>
     </section>
