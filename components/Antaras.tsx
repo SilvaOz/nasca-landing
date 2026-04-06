@@ -1,5 +1,6 @@
 import { SectionLabel } from './Features'
 
+// rgb stored separately so inline styles always use rgba() — avoids SSR/client hex mismatch
 const antaras = [
   {
     size: 'chuli',
@@ -9,6 +10,7 @@ const antaras = [
     range: '276 – 782 Hz',
     desc: 'Bright, soaring tones that called rain from the heavens.',
     accent: '#C9A84C',
+    rgb: '201,168,76',
     bg: 'from-[#2e1f06] to-[#140d02]',
     border: 'border-[#C9A84C]/30',
     free: true,
@@ -22,6 +24,7 @@ const antaras = [
     range: '138 – 391 Hz',
     desc: 'Deep resonances that carried prayers into the ancestral world.',
     accent: '#4A7AB5',
+    rgb: '74,122,181',
     bg: 'from-[#060f1e] to-[#020509]',
     border: 'border-[#4A7AB5]/40',
     featured: true,
@@ -35,6 +38,7 @@ const antaras = [
     range: '184 – 521 Hz',
     desc: 'Warm, balanced tones played in agricultural ceremonies.',
     accent: '#C4621A',
+    rgb: '196,98,26',
     bg: 'from-[#2a1208] to-[#100604]',
     border: 'border-[#C4621A]/30',
     img: '/images/sanqa.png',
@@ -71,30 +75,30 @@ export default function Antaras() {
                 <div>
                   <p
                     className="text-[10px] font-inter tracking-[0.25em] uppercase mb-1"
-                    style={{ color: `${a.accent}99` }}
+                    style={{ color: `rgba(${a.rgb},0.6)` }}
                   >
                     {a.world}
                   </p>
                   <h3 className="font-cinzel text-xl font-bold text-cream">{a.name}</h3>
-                  <p className="font-inter text-xs mt-0.5" style={{ color: `${a.accent}BB` }}>
+                  <p
+                    className="font-inter text-xs mt-0.5"
+                    style={{ color: `rgba(${a.rgb},0.73)` }}
+                  >
                     {a.worldLabel}
                   </p>
                 </div>
-                {a.free ? (
+                {(a.free || a.featured) && (
                   <span
                     className="text-[9px] font-inter tracking-widest px-2 py-1 rounded-md border"
-                    style={{ color: a.accent, borderColor: `${a.accent}50`, background: `${a.accent}18` }}
+                    style={{
+                      color: a.accent,
+                      borderColor: `rgba(${a.rgb},0.31)`,
+                      background: `rgba(${a.rgb},0.09)`,
+                    }}
                   >
-                    FREE
+                    {a.free ? 'FREE' : '✦ FEATURED'}
                   </span>
-                ) : a.featured ? (
-                  <span
-                    className="text-[9px] font-inter tracking-widest px-2 py-1 rounded-md border"
-                    style={{ color: a.accent, borderColor: `${a.accent}50`, background: `${a.accent}18` }}
-                  >
-                    ✦ FEATURED
-                  </span>
-                ) : null}
+                )}
               </div>
 
               {/* Antara real photo */}
@@ -102,16 +106,22 @@ export default function Antaras() {
                 <img
                   src={a.img}
                   alt={a.name}
-                  className="h-full w-full object-contain drop-shadow-xl"
-                  style={{ filter: `drop-shadow(0 4px 16px ${a.accent}40)` }}
+                  className="h-full w-full object-contain"
+                  style={{ filter: `drop-shadow(0 4px 16px rgba(${a.rgb},0.25))` }}
                 />
               </div>
 
               {/* Divider */}
-              <div className="h-px w-full" style={{ background: `${a.accent}20` }} />
+              <div
+                className="h-px w-full"
+                style={{ background: `rgba(${a.rgb},0.12)` }}
+              />
 
               {/* Range */}
-              <p className="font-inter text-xs" style={{ color: `${a.accent}CC` }}>
+              <p
+                className="font-inter text-xs"
+                style={{ color: `rgba(${a.rgb},0.8)` }}
+              >
                 ∿ {a.range}
               </p>
 
