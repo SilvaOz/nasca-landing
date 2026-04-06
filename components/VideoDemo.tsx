@@ -2,7 +2,7 @@ import { SectionLabel } from './Features'
 
 // ── Replace with your YouTube video ID once uploaded ──────────────────────
 // Example: https://www.youtube.com/watch?v=XXXXXXXXXXX → videoId = 'XXXXXXXXXXX'
-const YOUTUBE_VIDEO_ID = 'YOUTUBE_VIDEO_ID'
+const YOUTUBE_VIDEO_ID = 'qaG7KExHVX8'
 
 export default function VideoDemo() {
   return (
