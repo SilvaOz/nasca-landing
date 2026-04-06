@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
+import Antaras from '@/components/Antaras'
 import About from '@/components/About'
 import VideoDemo from '@/components/VideoDemo'
 import Download from '@/components/Download'
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <Antaras />
         <About />
         <VideoDemo />
         <Download />

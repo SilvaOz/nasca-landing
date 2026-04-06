@@ -1,5 +1,9 @@
 import { SectionLabel } from './Features'
 
+// ── Replace with your YouTube video ID once uploaded ──────────────────────
+// Example: https://www.youtube.com/watch?v=XXXXXXXXXXX → videoId = 'XXXXXXXXXXX'
+const YOUTUBE_VIDEO_ID = 'YOUTUBE_VIDEO_ID'
+
 export default function VideoDemo() {
   return (
     <section id="demo" className="py-28 px-6 bg-deep">
@@ -12,15 +16,18 @@ export default function VideoDemo() {
           Sonidos auténticos grabados en las tierras de Nazca, Perú
         </p>
 
-        {/* Video wrapper */}
-        <div className="relative rounded-2xl overflow-hidden border border-gold/25 shadow-2xl shadow-black/60 bg-black group">
-          <video
-            className="w-full aspect-video object-cover"
-            src="/video/demo.mp4"
-            controls
-            playsInline
-            poster="/images/demo-poster.jpg"
-          />
+        {/* YouTube embed — 16:9 */}
+        <div className="relative rounded-2xl overflow-hidden border border-gold/25 shadow-2xl shadow-black/60 bg-black">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?rel=0&modestbranding=1&color=white`}
+              title="Nazca Antara Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+
           {/* Corner accents */}
           {['top-0 left-0 border-t-2 border-l-2 rounded-tl-2xl',
             'top-0 right-0 border-t-2 border-r-2 rounded-tr-2xl',
