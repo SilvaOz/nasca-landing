@@ -28,19 +28,19 @@ export default function Download() {
           <span className="text-gold">Contigo</span>
         </h2>
         <p className="text-cream-muted font-inter text-lg mb-12 max-w-sm mx-auto">
-          Próximamente en App Store y Google Play.
+          Descarga Malta gratis y desbloquea Chuli y Sanqa desde la aplicación.
         </p>
 
         {/* Store buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <StoreButton
-            href="#"
+            href="/download"
             icon={<AppleIcon />}
             label="App Store"
             bg
           />
           <StoreButton
-            href="#"
+            href="/download"
             icon={<PlayIcon />}
             label="Google Play"
           />
@@ -106,7 +106,7 @@ function StoreButton({
     >
       {icon}
       <div className="text-left">
-        <div className="text-xs opacity-55 leading-none mb-0.5">Próximamente</div>
+        <div className="text-xs opacity-55 leading-none mb-0.5">Descargar en</div>
         <div className="text-lg leading-tight">{label}</div>
       </div>
     </a>

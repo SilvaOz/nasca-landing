@@ -7,6 +7,7 @@ Landing page del app **Nasca Antara**, construida con Next.js 15 + Tailwind CSS.
 | Ruta | Descripción |
 |------|-------------|
 | `/` | Home: hero, características, historia, demo en video, descarga |
+| `/download` | Destino permanente del QR; detecta iPhone/Android y enlaza a la tienda |
 | `/privacy` | Política de Privacidad (requerida por App Store y Google Play) |
 | `/terms` | Términos de Servicio (requeridos para IAP) |
 
@@ -49,5 +50,7 @@ Settings → Domains → agrega `nascaantara.com` (o el que tengas)
 - [ ] Reemplazar nombre/empresa real en Privacy Policy y Terms
 - [ ] Conectar formulario "Notificarme" a Mailchimp/Resend (ver `components/Download.tsx`)
 - [ ] Actualizar links App Store / Google Play cuando estén publicados
+- [ ] Configurar `NEXT_PUBLIC_IOS_STORE_URL` y `NEXT_PUBLIC_ANDROID_STORE_URL` en Vercel
+- [ ] Generar el QR apuntando a `https://nascaantara.com/download`
 - [ ] Agregar `app.json` → `"privacyPolicyUrl": "https://nascaantara.com/privacy"`
 - [ ] Agregar `app.json` → `"termsOfServiceUrl": "https://nascaantara.com/terms"`

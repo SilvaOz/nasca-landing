@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-3 mb-6 animate-fade-in">
           <div className="h-px w-16 bg-gold/60" />
           <span className="text-gold text-xs font-inter tracking-[0.35em] uppercase">
-            Instrumento Ancestral · Perú
+            Instrumento Ancestral
           </span>
           <div className="h-px w-16 bg-gold/60" />
         </div>
@@ -56,7 +56,7 @@ export default function Hero() {
           >
             <AppleIcon />
             <div className="text-left">
-              <div className="text-xs opacity-60 leading-none mb-0.5">Próximamente en</div>
+              <div className="text-xs opacity-60 leading-none mb-0.5">Descargar en</div>
               <div className="text-base leading-tight">App Store</div>
             </div>
           </a>
@@ -67,7 +67,7 @@ export default function Hero() {
           >
             <PlayIcon />
             <div className="text-left">
-              <div className="text-xs opacity-60 leading-none mb-0.5">Próximamente en</div>
+              <div className="text-xs opacity-60 leading-none mb-0.5">Descargar en</div>
               <div className="text-base leading-tight">Google Play</div>
             </div>
           </a>
